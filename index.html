@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Google Drive link များကို လိုချင်သော format အဖြစ် အလွယ်တကူပြောင်းလဲနိုင်သော web app">
+    <title>Google Drive Link Converter</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Google Drive Link Converter</h1>
+        
+        <div class="input-group">
+            <label for="driveLink">Google Drive Link ထည့်ပါ</label>
+            <input type="text" id="driveLink" placeholder="https://drive.google.com/file/d/1XYZ..." />
+        </div>
+        
+        <div class="input-group">
+            <label for="linkType">Link အမျိုးအစားရွေးပါ</label>
+            <select id="linkType">
+                <option value="download">Direct Download Link</option>
+                <option value="preview">Embedded Player Link</option>
+                <option value="view">Web Content Link (ပုံများအတွက်)</option>
+            </select>
+        </div>
+        
+        <button id="convertBtn">Link ပြောင်းရန်</button>
+        
+        <div class="result" id="result">
+            <h3>ပြောင်းလဲပြီးသော Link</h3>
+            <div class="converted-link" id="convertedLink"></div>
+            <button class="copy-btn" id="copyBtn">Link ကိုကူးယူရန်</button>
+        </div>
+        
+        <div class="instructions">
+            <h3>အသုံးပြုနည်း</h3>
+            <ul>
+                <li>Google Drive link ကို အကွက်ထဲထည့်ပါ</li>
+                <li>လိုချင်သော link အမျိုးအစားကို ရွေးပါ</li>
+                <li>"Link ပြောင်းရန်" ခလုတ်ကို နှိပ်ပါ</li>
+                <li>ပြောင်းလဲပြီးသော link ကို ကူးယူအသုံးပြုနိုင်ပါပြီ</li>
+            </ul>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Made with ❤️ | Google Drive Link Converter</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
